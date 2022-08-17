@@ -1,0 +1,32 @@
+import java.io.IOException;
+import java.util.Scanner; 
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner input = new Scanner(System.in);
+        
+        int A = input.nextInt();
+        
+        System.out.println(A);
+        
+        System.out.println(A / 100 + " Nota(s) de R$ 100,00 ");
+        A = A % 100;
+        System.out.println(A / 50 + " Nota(s) de R$ 50,00 ");
+        A = A % 50;
+        System.out.println(A / 20 + " Nota(s) de R$ 20,00 ");
+        A = A % 20;
+        System.out.println(A / 10 + " Nota(s) de R$ 10,00 ");
+        A = A % 10;
+        System.out.println(A / 5 + " Nota(s) de R$ 5,00 ");
+        A = A % 5;
+        System.out.println(A / 2 + " Nota(s) de R$ 2,00 ");
+        A = A % 2;
+        System.out.println(A / 1 + " Nota(s) de R$ 1,00 ");
+        A = A % 1;
+        
+        input.close();
+    }
+ 
+}
