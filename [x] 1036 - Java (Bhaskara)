@@ -1,0 +1,33 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        
+ 
+        Scanner sc = new Scanner(System.in);
+        
+        // Leitura dos valores
+        double A = sc.nextDouble();
+        double B = sc.nextDouble();
+        double C = sc.nextDouble();
+        
+        if (A == 0 || (B * B - 4 * A * C < 0)) {
+            System.out.print("Impossivel calcular");
+        }
+        
+        else {
+        double bhaskara = Math.sqrt((B*B) - 4 * A * C);
+        double R1 = (-B + bhaskara) / (2 * A);
+        double R2 = (-B - bhaskara) / (2 * A);
+        
+        System.out.printf("R1 = %.5n", R1);
+        System.out.printf("R2 = %.5n", R2);
+        
+        }
+        sc.close();
+ 
+    }
+ 
+}
