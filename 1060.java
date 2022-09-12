@@ -9,7 +9,7 @@ public class Main {
         
         int contador = 0;
         
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i <= 6; i++) {
             double n = input.nextDouble();
             if (n>0) contador++;
         }
