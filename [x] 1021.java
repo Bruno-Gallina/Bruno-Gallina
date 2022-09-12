@@ -148,3 +148,9 @@ public class Main {
     }
  
 }
+
+
+ //converte p inteiro
+//big decimal
+//double p int
+// v = (int) (v * 100)
