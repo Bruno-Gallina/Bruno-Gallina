@@ -1,5 +1,48 @@
 import java.io.IOException;
 import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+    Scanner sc = new Scanner(System.in);
+
+    double notas[] = {100.0, 50.0, 20.0, 10.0, 5.0, 2.0};
+    double moedas[] = {1.0, 0.50, 0.25, 0.10, 0.05, 0.01};
+
+    int qtdNota, qtdMoeda;
+
+    double n = sc.nextDouble();
+
+    n = (n * 100) + 0.05;
+
+    System.out.println("NOTAS:");
+
+    for (int i = 0; i < notas.length; i++) {
+
+	    qtdNota = (int) ( n / (notas[i] * 100));
+    	n %= notas[i] * 100;
+    	System.out.printf("%d nota(s) de R$ %.2f%n", qtdNota, notas[i]);
+    }
+
+    System.out.println("MOEDAS:");
+
+    for (int j = 0; j < moedas.length; j++) {
+
+	    qtdMoeda = (int) (n / (moedas[i] * 100));
+	    n %= moedas[i] * 100;
+	    System.out.printf("%d moeda(s) de R$ %.2f%n", qtdMoeda, moedas[i]);
+    }
+
+    sc.close();
+ 
+   }
+ 
+}
+
+
+import java.io.IOException;
+import java.util.Scanner;
  
 
 // 1st try
