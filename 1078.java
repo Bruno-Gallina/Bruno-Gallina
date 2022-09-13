@@ -1,3 +1,5 @@
+/* beecrowd 1078 - Tabuada */
+
 import java.io.IOException;
 import java.util.Scanner;
 
