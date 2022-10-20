@@ -1,0 +1,20 @@
+import java.io.IOException;
+import java.util.Scanner;
+ 
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner input = new Scanner(System.in);
+        
+        String VENDEDOR = input.nextLine();
+        double salario = input.nextDouble();
+        double total_vendas = input.nextDouble();
+        double total = (salario + (total_vendas * 0.15));
+        
+        System.out.printf("TOTAL = R$ %.2f%n", total);
+ 
+    }
+ 
+}

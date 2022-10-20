@@ -1,0 +1,24 @@
+import java.io.IOException;
+import java.util.Scanner;
+ 
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner input = new Scanner(System.in);
+        
+        float X1 = input.nextFloat();
+        float Y1 = input.nextFloat();
+        float X2 = input.nextFloat();
+        float Y2 = input.nextFloat();
+        
+        double distanciaXY = Math.sqrt(Math.pow(X2 - X1, 2) + Math.pow(Y2 - Y1,2));
+        
+        System.out.printf("%.4f%n", distanciaXY);
+        
+        input.close();
+ 
+    }
+ 
+}

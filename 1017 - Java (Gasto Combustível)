@@ -1,0 +1,23 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner input = new Scanner(System.in);
+        
+        int tempo = input.nextInt();
+        int velo_media = input.nextInt();
+        
+        int kms = tempo * velo_media;
+        
+        double gasto = kms / 12.0;
+        
+        System.out.printf("%.3f%n", gasto);
+        
+        input.close();
+ 
+    }
+ 
+}
